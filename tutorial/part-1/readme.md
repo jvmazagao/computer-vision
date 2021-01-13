@@ -24,3 +24,6 @@ We want our window to be displayed until the user presses a key
     k = cv.waitKey(0)
 
 in the end, the image is writen to a file if the pressed key was the s-key.
+
+    if k == ord("s"):
+    cv.imwrite("starry_night.png", img)
