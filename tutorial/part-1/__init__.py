@@ -1,6 +1,5 @@
 import cv2 as cv
 import sys
-import pathlib
 
 if __name__ == "__main__":
     img = cv.imread(cv.samples.findFile('images/space.png'), cv.IMREAD_GRAYSCALE)
