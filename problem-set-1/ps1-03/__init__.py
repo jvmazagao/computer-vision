@@ -59,8 +59,6 @@ plt.subplot(224), plt.imshow(img_back2, cmap='gray')
 plt.title('Amp from 2 Phase from 1'), plt.xticks([]), plt.yticks([])
 plt.show()
 
-# -------------------------------------------------------------
-# Loading a uniform texture / human face
 img = cv.imread('images/400v400-t-1.png', 0)
 
 dft = discrete_fourier_transform(img)

@@ -32,7 +32,6 @@ for i in range(0, 101):
     for j in range(0, 101):
 
         # Finding the HSI values
-
         # Find the hue as the angle between the point and predefined value
         hue = angle_between([i - 50, (j - 50) * -1], [0, -1])
 

@@ -20,7 +20,7 @@ frameCount = 0
 while True:
     (grabbed, frame) = video.read()
 
-    framePeriod = int(1000 * 1.0 / video.get(cv.CAP_PROP_FPS))
+    period = int(1000 * 1.0 / video.get(cv.CAP_PROP_FPS))
 
     if args.get("video") and not grabbed:
         break
@@ -37,7 +37,7 @@ while True:
     cv.imshow("images", frame)
 
     frameCount = frameCount + 1
-    if cv.waitKey(framePeriod) & 0xFF == ord("q"):
+    if cv.waitKey(period) & 0xFF == ord("q"):
         break
 
 std1 = np.std(d1)
